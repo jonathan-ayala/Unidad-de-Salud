@@ -1,0 +1,7 @@
+DROP TABLE `videos`;
+CREATE TABLE `videos` (  `id` int(11) NOT NULL AUTO_INCREMENT,  `name` varchar(255) NOT NULL,  `url` varchar(255) NOT NULL,  PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+INSERT INTO `videos` VALUES('36', 'Secuencia 01.mp4', '22101.mp4');
+INSERT INTO `videos` VALUES('37', 'FIN animado con sonido[1].mp4', '22634.mp4');
+INSERT INTO `videos` VALUES('38', 'Secuencia 01.mp4', '8539.mp4');
+INSERT INTO `videos` VALUES('39', 'Secuencia 01[1].mp4', '18462.mp4');
+INSERT INTO `videos` VALUES('40', 'FIN animado con sonido[1].mp4', '8077.mp4');

@@ -1,0 +1,9 @@
+DROP TABLE `tag`;
+CREATE TABLE `tag` (  `id` int(11) NOT NULL AUTO_INCREMENT,  `name` varchar(255) NOT NULL,  `top` int(11) NOT NULL,  `left` int(11) NOT NULL,  `meses` varchar(255) NOT NULL,  `estado` varchar(255) NOT NULL,  PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+INSERT INTO `tag` VALUES('3', 'Juana Pineda', '96', '340', '', '');
+INSERT INTO `tag` VALUES('14', 'Fidelina', '400', '196', '', '');
+INSERT INTO `tag` VALUES('15', 'sd', '187', '715', 'sd', 'sd');
+INSERT INTO `tag` VALUES('16', 'sdsd', '225', '479', 'sdsd', 'sdsd');
+INSERT INTO `tag` VALUES('17', 'dsads', '115', '177', 'dsads', 'dsads');
+INSERT INTO `tag` VALUES('18', 'dasds', '339', '504', 'dasds', 'dasds');
+INSERT INTO `tag` VALUES('19', 'fdfdf', '352', '434', 'fdfdf', 'fdfdf');

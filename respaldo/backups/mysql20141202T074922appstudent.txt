@@ -1,0 +1,14 @@
+DROP TABLE `alumnos`;
+CREATE TABLE `alumnos` (  `id_alumno` int(11) NOT NULL AUTO_INCREMENT,  `nombres` varchar(50) DEFAULT NULL,  `apellidos` varchar(50) DEFAULT NULL,  `direccion` varchar(50) DEFAULT NULL,  `id_carrera` int(11) NOT NULL,  PRIMARY KEY (`id_alumno`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE `carreras`;
+CREATE TABLE `carreras` (  `id_carrera` int(11) NOT NULL AUTO_INCREMENT,  `descripcion` varchar(50) NOT NULL,  `id_facultad` int(11) NOT NULL,  PRIMARY KEY (`id_carrera`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE `docente`;
+CREATE TABLE `docente` (  `id_docente` int(11) NOT NULL AUTO_INCREMENT,  `nombre` varchar(50) NOT NULL,  `apellido` varchar(50) NOT NULL,  `fecha_nacimiento` varchar(50) NOT NULL,  `especialidad` varchar(50) NOT NULL,  PRIMARY KEY (`id_docente`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE `especialidad`;
+CREATE TABLE `especialidad` (  `id_especialidad` int(11) NOT NULL AUTO_INCREMENT,  `nombre` varchar(50) NOT NULL,  PRIMARY KEY (`id_especialidad`)) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+INSERT INTO `especialidad` VALUES('1', 'Mate');
+DROP TABLE `facultades`;
+CREATE TABLE `facultades` (  `id_facultad` int(11) NOT NULL AUTO_INCREMENT,  `descripcion` varchar(50) NOT NULL,  `decano` varchar(50) NOT NULL,  PRIMARY KEY (`id_facultad`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TABLE `usuarios`;
+CREATE TABLE `usuarios` (  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,  `usuario` varchar(25) NOT NULL,  `Nombre` varchar(100) NOT NULL,  `Password` blob NOT NULL,  PRIMARY KEY (`id_usuario`)) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+INSERT INTO `usuarios` VALUES('1', 'admin', 'Administrador', 'admon');

@@ -1,0 +1,347 @@
+*{
+	font-family: verdana;
+	font-size: 12px;
+}
+body{
+	background: #eee;
+	font-family: verdana;
+	font-size: 13px;
+	padding: 0px;
+}
+#buscar{
+	background: white;
+	width: 220px;
+	border: solid 1px #369dd8; 
+}
+.sesion{
+	background: white;
+	margin: auto;
+	width: 850px;
+	height: auto;
+}
+.pagina{
+	background: white;
+	margin: auto;
+	width: 972px;
+	height: auto;
+	border: solid 1px grey;
+
+}
+.pagina2{
+	background: white;
+	margin: auto;
+	width: 972px;
+	height: auto;
+}
+.h1{
+	color: #6599cf;
+	margin:auto;
+	text-align: left;
+}
+.caja{
+	background: #fff;
+	border: solid #6599cf 1px;
+	border-radius: 6px;
+	width:150px;
+	height:25px;
+}
+.caja:hover{
+	background: #eee;
+}
+.ingresar{
+	background: #6599cf;
+	color: white;
+	width: 120px;
+	height: 25px;
+	border: solid 1px #6599cf; 
+	border-radius: 6px;
+	font-weight: bold;
+
+}
+.ingresar:active{
+	background: gray;
+	color: white;
+	width: 120px;
+	height: 25px;
+	border: solid 1px gray; 
+	border-radius: 6px;
+	font-weight: bold;
+
+}
+
+.ingresar2{
+	background: #6599cf;
+	color: white;
+	width: 150px;
+	height: 25px;
+	border: solid 1px #6599cf; 
+	border-radius: 6px;
+	font-weight: bold;
+
+}
+.ingresar2:active{
+	background: gray;
+	color: white;
+	width: 150px;
+	height: 25px;
+	border: solid 1px gray; 
+	border-radius: 6px;
+	font-weight: bold;
+
+}
+
+.prn{
+	background: url(1.jpg)no-repeat  fixed;
+	width: 850px;
+	margin: auto;
+	height: 500px;
+}
+.eva{
+	background: #27a24d;
+	border: solid #27a24d 1px;
+	border-radius: 9px;
+	opacity: 100;
+	width: 450px;
+	height: 60px;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	top:250px;
+	position: relative;
+	opacity:0.5;
+}
+.eva:hover{
+	opacity: 3;
+}
+.pie{
+	background: #6599cf;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+	width: 972px;
+	height: auto;
+	border-bottom: solid yellow 2px;
+}
+table.lmenu{
+	background: #6599cf;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	border-bottom: solid 2px yellow;
+}
+.items{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+.items:hover{
+	font-size: 15px;
+	text-decoration: underline;
+}
+.h2{
+	background: #6599cf;
+	color: white;
+	text-align: center;
+	border-top: yellow solid 1px;
+	border-bottom:yellow solid 1px;
+}
+.linea{
+	background: #6599cf;
+	color: white;
+	font-weight: bold;
+}
+.items2{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 14px;
+}
+.items2:hover{
+	font-size: 15px;
+	text-decoration: underline;
+}
+/*Estilos para expediente*/
+.formu {
+   padding:20px;
+   padding-left:20px;
+}
+
+.uno {
+  padding-right: 52px;
+}
+
+
+
+#valCo {
+  margin-left: -170px;
+}
+
+#confirmPass1 {
+  margin-left: -180px;
+}
+
+#ValReg , #valCorPass
+{
+  margin-left: -200px;
+}
+
+
+
+/*Estilos para RegUsu2*/
+.formu {
+   padding:20px;
+   padding-left:20px;
+}
+
+.uno {
+  padding-right: 52px;
+}
+
+
+
+#valCo {
+  margin-left: -170px;
+}
+
+#confirmPass1 {
+  margin-left: -180px;
+}
+
+#ValReg , #valCorPass
+{
+  margin-left: -200px;
+}
+
+
+
+/* Estilos para la validacion de los formularios */
+.validacion {
+	color:#B00D07;
+	position: relative;
+	margin-left: 0px;
+	padding: 2;
+	border: solid 1px;
+    border-radius:20px;
+}
+
+.invisible{
+	visibility: hidden;
+}
+
+.visible{
+	visibility: visible;
+}
+.usuario{
+	color: black;
+	font-weight: bold;
+	font-size: 12px;
+
+}
+
+.cdiv{
+	position: relative;
+	width: 100%;
+	height: auto;
+	left:-78px;
+	top:20px;
+
+
+
+}
+#image{
+	cursor: crosshair;
+}
+#name{
+	background: #fff;
+	border: 2px solid #ccc;
+	padding: 5px;
+	font-family: verdana;
+	font-size: 12px;
+	display: none;
+	position: absolute;
+}
+
+#tagged{
+	position: absolute;
+	opacity: 0.5;
+	padding: 5px 5px 5px 5px;
+	background:url(inf.png) no-repeat;
+	font-weight: bold;
+	width: 150px;
+	height: 50px;
+	color: white;
+	text-align: center;
+}
+#tagged:hover{
+	opacity: 1;
+}
+
+.link{
+
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size:12px;
+}
+.link:hover{
+	text-decoration: underline;
+}
+
+
+.link2{
+
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	font-size:12px;
+}
+.link2:hover{
+	text-decoration: underline;
+}
+
+.centrar{
+	width: 972px;
+	height: auto;
+	margin: auto;
+}
+.boton{
+	background: #6599cf;
+	color: white;
+	font-weight: bold;
+	width: 125px;
+	border: 1px solid #6599cf;
+}
+.boton:active{
+	background: #6c6c6c;
+	border: 1px solid #6c6c6c;
+}
+.caja2{
+	background: white;
+	border: solid 1px #369dd8; 
+}
+.caja2:hover{
+	border: solid 1px #9b1b1b; 
+}
+.select{
+	background: white;
+	width: 160px;
+	border: solid 1px #369dd8; 
+}
+.select:hover{
+	border: solid 1px #9b1b1b; 
+}
+}
+.tarea{
+	background: white;
+	width: 320px;
+	border: solid 1px #369dd8;
+	height: 45px;
+}
+.tarea:hover{
+	border: solid 1px #9b1b1b; 
+}
+.txt{
+	font-weight: bold;
+}

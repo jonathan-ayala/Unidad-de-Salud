@@ -1,0 +1,13 @@
+DROP TABLE `categorias`;
+CREATE TABLE `categorias` (  `idCategoria` int(11) unsigned NOT NULL AUTO_INCREMENT,  `valor` varchar(50) NOT NULL,  PRIMARY KEY (`idCategoria`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+DROP TABLE `comentarios`;
+CREATE TABLE `comentarios` (  `idComentario` int(11) unsigned NOT NULL AUTO_INCREMENT,  `comentario` varchar(255) NOT NULL,  `idUsuario` int(11) unsigned NOT NULL,  `idNoticia` int(11) unsigned NOT NULL,  `estado` enum('sin validar','apto') NOT NULL DEFAULT 'sin validar',  `fCreacion` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,  PRIMARY KEY (`idComentario`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+DROP TABLE `noticias`;
+CREATE TABLE `noticias` (  `idNoticia` int(11) unsigned NOT NULL AUTO_INCREMENT,  `titulo` varchar(50) NOT NULL,  `copete` varchar(255) NOT NULL,  `cuerpo` text NOT NULL,  `idUsuario` int(11) NOT NULL,  `idCategoria` int(11) NOT NULL,  `fPublicacion` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,  `fCreacion` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',  `fModificacion` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',  PRIMARY KEY (`idNoticia`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+DROP TABLE `usuarios`;
+CREATE TABLE `usuarios` (  `idUsuario` int(11) unsigned NOT NULL AUTO_INCREMENT,  `usuario` varchar(50) NOT NULL,  `password` char(32) NOT NULL,  `email` varchar(50) NOT NULL,  `tipo` enum('comun','admin') NOT NULL DEFAULT 'comun',  PRIMARY KEY (`idUsuario`)) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+INSERT INTO `usuarios` VALUES('1', 'juan', 'c6cc8094c2dc07b700ffcc36d64e2138', '2005', 'comun');
+INSERT INTO `usuarios` VALUES('2', 'hm', '2ab5564b805d8065f4bcf81060472746', '1', 'comun');
+INSERT INTO `usuarios` VALUES('3', 'juan', '765ba753b609d84b3813991fe23f81b3', '20051995', 'comun');
+INSERT INTO `usuarios` VALUES('4', 'jua', '202cb962ac59075b964b07152d234b70', '3', 'comun');
+INSERT INTO `usuarios` VALUES('5', 'nn', 'eab71244afb687f16d8c4f5ee9d6ef0e', 'nn', 'comun');
